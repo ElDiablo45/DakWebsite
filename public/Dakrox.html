@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://kit.fontawesome.com/367278d2a4.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Dakrox7</title>
+    <link rel="stylesheet" href="files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="files/style-dakrox.css">
+    <link rel="stylesheet" href="files/font-awesome.min.css">
+    <link rel="icon" href="files/dakrox.png" type="image/x-icon">
+<style>
+  .vt-augment {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .vt-augment.drawer {
+    display: none;
+    width: 700px;
+    background: white;
+    border: 1px solid #e6e6e6;
+    text-align: left;
+    z-index: 102;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    box-shadow: -4px 5px 8px -3px rgba(17, 17, 17, .16);
+    animation: slideToRight 0.5s 1 forwards;
+    transform: translateX(100vw);
+  }
+  .vt-augment.drawer[opened] {
+    display: flex;
+    animation: slideFromRight 0.2s 1 forwards;
+  }
+  .vt-augment > .spinner {
+    position: absolute;
+    z-index: 199;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    border: 8px solid rgba(0, 0, 0, 0.2);
+    border-left-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.2s linear infinite;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideToRight {
+    100% {
+      transform: translateX(100vw);
+      display: none;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .vt-augment.drawer {
+      width: 100%;
+    }
+  }
+</style></head>
+
+<body>
+    <img id="xuserPhoto" src="files/d_logo.png" alt="Image">
+
+    <spam id="xuserName">Dakrox7</spam>
+
+    <div id="xlinks">
+        <a class="xlink" href="https://www.twitch.tv/dakrox7" target="Twitch" style="border-radius: 10px;"><i class="fa fa-twitch" aria-hidden="true"></i> Twitch</a>
+        <a class="xlink" href="https://www.instagram.com/danireyy/" target="Instagram" style="border-radius: 10px;"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+        <a class="xlink" href="https://twitter.com/danireyy7" target="Twitter" style="border-radius: 10px;"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+        <a class="xlink" href="https://www.tiktok.com/@dakrox_7" target="TikTok " style="border-radius: 10px;"><i class="fa-brands fa-tiktok" aria-hidden="true"></i> TikTok</a>
+        <a class="xlink" href="https://www.youtube.com/@dakrox7807" target="Youtube" style="border-radius: 10px;"><i class="fa-brands fa-youtube" aria-hidden="true"></i> Youtube</a>
+        <a class="xlink" href="https://discord.gg/XPXEwZGXnh" target="Discord" style="border-radius: 10px;"><i class="fab fa-discord" aria-hidden="true"></i> Discord</a>
+    </div>
+
+    <div id="boton">
+      <a class="boton" href="https://discord.gg/XPXEwZGXnh" target="Discord" style="border-radius: 10px;"><i class="fab fa-discord" aria-hidden="true"></i> Discord</a>
+    </div>
+    
+
+    <div class="xcopyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p id="xcopyright" class="p-small">Derechos reservados a  <a class="xprojectslink" href="https://twitter.com/danireyy7">Dakrox | Comunity</a> - ©2023</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Javascript -->
+    <script src="files/jquery.min.js"></script>
+
+
+<div>
